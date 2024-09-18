@@ -6,7 +6,7 @@ import java.time.LocalDateTime
 
 @Entity
 @Table(name = "articles")
-class Article(
+data class Article(
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY) val id: Long? = null,
     var title: String,
     var content: String,
